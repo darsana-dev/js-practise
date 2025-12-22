@@ -1,0 +1,174 @@
+body {
+	font-family: Arial, sans-serif;
+	padding: 16px;
+    background-color: rgb(204, 224, 250);
+
+}
+
+#projects {
+	margin-bottom: 12px;
+    font-display: swap;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(223, 228, 193);
+}
+
+.project-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 6px;
+	border-radius: 4px;
+}
+
+.project-left {
+	cursor: pointer;
+    display: flex;
+    align-items: center;
+
+}
+
+.project-name.selected {
+	font-weight: 700;
+
+}
+
+.project-meta {
+	font-size: 0.8em;
+	color: #666;
+	margin-left: 8px;
+
+}
+
+.project-actions button {
+	margin-left: 6px;
+
+}
+
+.todo-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 6px;
+    border-radius: 4px;
+    background-color: antiquewhite;
+}
+
+.todo-left {
+	display: flex;
+	align-items: center;
+
+}
+
+.todo-title {
+	margin-left: 8px;
+    font-size: 1em;
+    font-weight: 600;
+
+}
+
+.todo-title.completed {
+	text-decoration: line-through;
+	color: #888;
+
+}
+
+.todo-actions button {
+	margin-left: 6px;
+}
+
+.btn {
+	padding: 4px 8px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+
+}
+
+.btn.danger {
+	border-color: #e66;
+	color: #900;
+
+}
+
+#project-stats {
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+/* Layout */
+.app-container {
+	display: flex;
+	gap: 20px;
+	align-items: flex-start;
+}
+
+.sidebar {
+	width: 300px;
+	background: rgba(255,255,255,0.06);
+	padding: 12px;
+	border-radius: 6px;
+}
+
+.main {
+	flex: 1;
+	background: rgba(255,255,255,0.04);
+	padding: 12px;
+	border-radius: 6px;
+}
+
+.project-controls,
+.todo-controls {
+	display: flex;
+	gap: 8px;
+	margin-top: 8px;
+}
+
+.project-controls input,
+.todo-controls input,
+.todo-controls select {
+	padding: 6px 8px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background: #fff;
+}
+
+.project-controls button,
+.todo-controls button {
+	padding: 6px 10px;
+}
+
+.todos-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+/* Nested todos under a project (compact)
+	 minimal design: smaller font, compact buttons */
+.project-todos {
+	margin: 6px 0 12px 12px;
+	padding-left: 6px;
+	border-left: 2px dashed rgba(0,0,0,0.05);
+}
+
+.project-todo-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	font-size: 0.95em;
+	margin-bottom: 6px;
+}
+
+.project-todo-left { display: flex; align-items: center; gap: 8px; }
+.project-todo-title.completed { text-decoration: line-through; color: #888; }
+.project-todo-actions .btn { padding: 3px 6px; font-size: 0.9em; }
+
+/* Make UI minimal: remove heavy borders */
+.btn { background: transparent; border: 1px solid transparent; }
+.btn:hover { background: rgba(0,0,0,0.03); border-color: rgba(0,0,0,0.06); }
+.btn.danger { color: #c33; }
+
+
